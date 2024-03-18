@@ -56,6 +56,6 @@ if st.button('Recommend Medicine'):
                                          ## Image load ##
 from PIL import Image
 image = Image.open('images/recominac.png')
-st.image(image, caption='')
+st.image(image, caption='Created by Soumalya Bhattacharyya, Sayan Pan and Ritam Koley')
 
 
