@@ -17,7 +17,6 @@ medicines = pd.DataFrame(medicines_dict)
 similarity = pickle.load(open('similarity.pkl','rb'))
 
 def recommend(medicine):
-     st.set_page_config(page_title="Recominac", layout="wide")
     
      medicine_index = medicines[medicines['Drug_Name'] == medicine].index[0]
      distances = similarity[medicine_index]
@@ -36,6 +35,10 @@ def recommend(medicine):
 
                                    # Title of the Application
 st.title('Recominac : Pharma Recommender')
+
+# Setting page configuration
+st.set_page_config(
+    page_title="Recominac",
 
 
                                         # Searchbox
