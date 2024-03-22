@@ -37,8 +37,7 @@ def recommend(medicine):
 st.title('Recominac : Pharma Recommender')
 
 # Setting page configuration
-st.set_page_config(
-    page_title="Recominac",)
+st.set_page_config(page_title="Recominac")
 
 
                                         # Searchbox
