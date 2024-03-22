@@ -34,11 +34,6 @@ def recommend(medicine):
 
                                    # Title of the Application
 st.title('Recominac : Pharma Recommender')
-st.set_page_config(
-    page_title="Predimed",
-    
-    initial_sidebar_state = 'auto'
-)
 
                                         # Searchbox
 selected_medicine_name = st.selectbox(
@@ -55,6 +50,13 @@ if st.button('Recommend Medicine'):
           # st.write("Click here -> "+" https://www.netmeds.com/catalogsearch/result?q="+i) # Recommnded drug purchase link from netmeds
           st.write("Click here -> "+" https://pharmeasy.in/search/all?name="+i) # Recommnded-drug purchase link from pharmeasy
           j+=1
+
+                                      #Page Configuration
+st.set_page_config(
+    page_title="Recominac",
+    
+    initial_sidebar_state = 'auto'
+)
 
 
 
