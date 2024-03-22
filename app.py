@@ -51,12 +51,6 @@ if st.button('Recommend Medicine'):
           st.write("Click here -> "+" https://pharmeasy.in/search/all?name="+i) # Recommnded-drug purchase link from pharmeasy
           j+=1
 
-                                      #Page Configuration
-st.set_page_config(
-    page_title="Recominac",
-    
-    initial_sidebar_state = 'auto'
-)
 
 
 
