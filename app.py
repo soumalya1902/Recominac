@@ -34,7 +34,7 @@ def recommend(medicine):
 
                                    # Title of the Application
 st.title('Recominac : Pharma Recommender')
-st.set_page_config(page_title="Recominac")
+
 
                                         # Searchbox
 selected_medicine_name = st.selectbox(
