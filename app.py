@@ -17,6 +17,8 @@ medicines = pd.DataFrame(medicines_dict)
 similarity = pickle.load(open('similarity.pkl','rb'))
 
 def recommend(medicine):
+     st.set_page_config(page_title="Recominac", layout="wide")
+    
      medicine_index = medicines[medicines['Drug_Name'] == medicine].index[0]
      distances = similarity[medicine_index]
      medicines_list = sorted(list(enumerate(distances)), reverse=True, key=lambda x: x[1])[1:6]
